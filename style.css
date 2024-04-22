@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+.base{
+    background-color: #D9CCB9;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    background-color: #46361B;
+    border-radius: 15px;
+    box-shadow: 15px 15px 5px 5px #937E60;
+}
+.left-image{
+    background-image: url("excercise.jpg");
+    background-size: cover;
+    width: 30%;
+    height: 94%;
+    padding-top: 30px;
+    padding-left: 20px;
+    color: #46361B;
+    font-weight: bold;
+    font-size: 16px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.right-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 94%;
+}
+.form{
+    text-align: center;
+    color:#FAD8A1;
+    border: 5px solid #937E60;
+    width: 50%;
+    height: 65%;
+}
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+input[type = number]:focus{
+    background-color: #D9CCB9;
+    color: #46361B
+}
+input[type = number]{
+    background-color: #46361B;
+    color:#D9CCB9;
+    width: 50%;
+    padding: 8px 20px;
+    margin-top: 8px;
+    border: 2px solid #D9CCB9;
+    border-radius: 5px;
+    font-weight: bold;
+}
+select{
+    background-color: #D9CCB9;
+    color:#46361B;
+    padding: 3px 7px;
+    font-weight: bold;
+}
+.enter{
+    margin: 10px;
+}
+#submit-btn{
+    width: 120px;
+    height: 35px; 
+    background-color: #FAD8A1;
+    color: #46361B;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit-btn:hover{
+    transform: scale(1.2);
+}
+#output{
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
