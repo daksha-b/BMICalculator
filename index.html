@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "base">
+        <div class="container">
+            <div class="left-image">
+                Did You Know?<br>
+                Individuals with identical BMI values may exhibit variations in their overall body fat levels!
+            </div>
+            <div class = "right-form">
+                
+                <div class = "form">
+                    <form>
+                        <div class = "heading">Let's calculate your Body Mass Index!</div>
+                        <div class="enter input-weight">
+                            What is your weight?<br>
+                            <input type = "number" id = "weight" placeholder = "Enter your weight here" pattern = "[0-9]*]" name = "enter-weight">
+                            <select id = "weight-unit" name = "weight-unit">
+                                <option value = "kg">kg</option>
+                                <option value = "lb">lb</option>
+                            </select> 
+                        </div>
+                        <div class="enter input-height">
+                            What is your height?<br>
+                            <input type = "number" id = "height" placeholder = "Enter your height here" pattern = "[0-9]*]" name = "enter-height">
+                            <select id = "height-unit" name = "height-unit">
+                                <option value = "cm">cm</option>
+                                <option value = "ft">ft</option>
+                            </select>
+                        </div>
+                        <div class="submit">
+                            <button id = "submit-btn" type = "button" value = "Calculate BMI" onclick="CalculateBMI()">Calculate BMI </button>
+                        </div>
+                        <div id = "output"> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
